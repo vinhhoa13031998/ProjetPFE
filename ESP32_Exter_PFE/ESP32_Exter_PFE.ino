@@ -41,7 +41,7 @@ float lum;
 DHT dht(Pin_Temperature, DHT22);
 // Initialise the WiFi and MQTT Client objects
 WiFiClient wifiClient;
-// 8883 is the listener port for the Broker
+// 1883 is the listener port for the Broker
 PubSubClient client(mqtt_server, 1883, wifiClient);
 
 void blick_led_n_times(int n) {
